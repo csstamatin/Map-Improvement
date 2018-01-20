@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,8 +11771,7 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11782,13 +11779,12 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Map-Data">Map Data<a class="anchor-link" href="#Map-Data">&#182;</a></h2><p>The closest map data that was large enough and of interest to me was Tallahassee, Florida.</p>
-<p>Below are links to OpenStreetMaps map of the city and the data I downloaded from Mapzen for this project..</p>
+<p>Below are links to OpenStreetMaps map of the city and the data I downloaded from Mapzen for this project.</p>
 <h4 id="Tallahassee,-Florida,-United-States-of-America">Tallahassee, Florida, United States of America<a class="anchor-link" href="#Tallahassee,-Florida,-United-States-of-America">&#182;</a></h4><ul>
     <li>http://www.openstreetmap.org/#map=11/30.4670/-84.3427</li>
     <li>https://mapzen.com/data/metro-extracts/your-extracts/4fcff13e8fb7</li>
@@ -11796,8 +11792,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11805,13 +11800,12 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To start analyzing the data, files from the lesson like mapfix.py, iterrtags.py, and data.py, were used, adding code as needed for this specific set. Overall I found Tallahasse to be a fairly clean map. Many problems were addressed with the provided code including basic address abreviations.</p>
-<p>The provided sampleosm.py file helped get the sample size down small enough to browse through. The first step was to output information to the console to get a sense of the data. The ittertags.py file helped accomplish this. This was modified to not only output the amount of problem characters, etc., but also to print out a few to help narrow down what needed to be fixed. It was noted that the chosen data was fairly clean. To find problems easier a test database was used. Then data.py was modified to fix the first set of problems, and create the csv's for the test.db. The only change needed was to split any keys that were combined with the type such as key:key:type and label them correctly. This was easy to locate and correct so it was the first priority.</p>
+<p>The provided sampleosm.py file helped get the sample size down small enough to browse through. The first step was to output information to the console to get a sense of the data. The ittertags.py file helped accomplish this. This was modified to not only output the amount of problem characters, etc., but also to print out a few to help narrow down what needed to be fixed. It was noted that the chosen data was fairly clean. To find problems easier a test database was used. Then data.py was modified to fix the first set of problems, and create the csv's for the test.db. The only change needed was to split any keys that were combined with the type such as key&colon;key&colon;type and label them correctly. This was easy to locate and correct so it was the first priority.</p>
 <p>After creating the test database, I looked for the top ten keys and values in each set of tags. Here is an early look at the data before my corrections.</p>
 
 </div>
@@ -11872,11 +11866,26 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
 <div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -11966,11 +11975,26 @@ div#notebook {
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 <div class="output_html rendered_html output_subarea ">
 <div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -12063,18 +12087,16 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The table on the left represents the keys of both tables. The table on the right represents the values. Both tables share some keys in the top ten. City, street, name, highway and zip are some of the most used and easiest to identify problems, so these were browsed first. Another problem to address was the underscore between words like traffic_signals. So underscore characters was the second priority.</p>
+<p>The table on the left represents the keys of both tables. The table on the right represents the values. Both tables share some keys in the top ten. City, street, name, highway and zip are some of the most used and easiest to identify problems, so these were browsed first. Another problem to address was the underscore between words like traffic&lowbar;signals. So underscore characters was the second priority.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12082,18 +12104,20 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Looking through the data first in the python console then through my early test.db, I found at least five different areas that required correction. Most were small or required significant research to correct them so four problems were chosen, corrected in python and loaded into the final database of Tallahassee for project queries. The four areas chosen are as follows.</p>
-<h4 id="1.-Double-Keys:-Keys-with-both-key-and-type-combined-with-a-:.-Also-starts-to-correct-tiger-data.">1. Double Keys: Keys with both key and type combined with a :. Also starts to correct tiger data.<a class="anchor-link" href="#1.-Double-Keys:-Keys-with-both-key-and-type-combined-with-a-:.-Also-starts-to-correct-tiger-data.">&#182;</a></h4><h4 id="2.-Underscored-Strings:-Underscores-and-possible-other-punctuation-between-words-in-strings.">2. Underscored Strings: Underscores and possible other punctuation between words in strings.<a class="anchor-link" href="#2.-Underscored-Strings:-Underscores-and-possible-other-punctuation-between-words-in-strings.">&#182;</a></h4><h4 id="3.-Street-Names:--Correct-inconsistent-names-and-abbreviations.">3. Street Names:  Correct inconsistent names and abbreviations.<a class="anchor-link" href="#3.-Street-Names:--Correct-inconsistent-names-and-abbreviations.">&#182;</a></h4><h4 id="4.-Phone-numbers:-Correct-inconsistent-phone-numbers.">4. Phone numbers: Correct inconsistent phone numbers.<a class="anchor-link" href="#4.-Phone-numbers:-Correct-inconsistent-phone-numbers.">&#182;</a></h4>
+<h4>1. Double Keys&colon; Keys with both key and type combined with a &colon;. Also starts to correct tiger data.</h4>
+<h4>2. Underscored Strings&colon; Underscores and possible other punctuation between words in strings.</h4>
+<h4>3. Street Names&colon;  Correct inconsistent names and abbreviations.</h4>
+<h4>4. Phone numbers&colon; Correct inconsistent phone numbers.</h4>
+
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12101,12 +12125,11 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The first and probably simplest to correct was the keys error. Addresses and a few other types were stuck in the key value such as addr:city or tiger:name_type. Also tiger data is given its own type making it easier to find and correct in the future.</p>
+<p>The first and probably simplest to correct was the keys error. Addresses and a few other types were stuck in the key value such as addr&colon;city or tiger&colon;name&lowbar;type. Also tiger data is given its own type making it easier to find and correct in the future.</p>
 
 <pre><code>if ":" in key:
         ttype, key = key.split(":", 1)</code></pre>
@@ -12114,8 +12137,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12123,12 +12145,11 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Again, this was a fairly easy correction. There were too many underscores for regular string data such as traffic_signals or state_id.</p>
+<p>Again, this was a fairly easy correction. There were too many underscores for regular string data such as traffic&lowbar;signals or state&lowbar;id.</p>
 
 <pre><code>if "_" in value:
         value = value.replace("_", " ")
@@ -12138,8 +12159,7 @@ if "_" in key:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12147,8 +12167,7 @@ if "_" in key:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12171,8 +12190,7 @@ if "_" in key:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12180,12 +12198,11 @@ if "_" in key:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To make phone numbers more consistent, all spaces, symbols and leading +1's were dropped. So all phone number changed from +1-850-123-1234 to 8501231234.</p>
+<p>To make phone numbers more consistent, all spaces, symbols and leading &plus;1&apos;s were dropped. So all phone number changed from &plus;1&dash;850&dash;123&dash;1234 to 8501231234.</p>
 
 <pre><code>if key == "phone":
         tempv = ""
@@ -12202,8 +12219,7 @@ if "_" in key:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12211,8 +12227,7 @@ if "_" in key:
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12229,8 +12244,7 @@ ways_nodes.cv ......... 7.56 MB</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12278,11 +12292,26 @@ ways_nodes.cv ......... 7.56 MB</code></pre>
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[2]:</div>
+
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -12312,8 +12341,7 @@ ways_nodes.cv ......... 7.56 MB</code></pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12322,8 +12350,7 @@ ways_nodes.cv ......... 7.56 MB</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12331,8 +12358,7 @@ ways_nodes.cv ......... 7.56 MB</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12373,17 +12399,16 @@ Caboosey         171516           793
 Rub21            510836           793                      
 andygol          94578            768                      
 srividya_c       2115749          756</code></pre>
-<h3 id="Basic-Statistics-for-Nodes,-Ways-and-Users">Basic Statistics for Nodes, Ways and Users<a class="anchor-link" href="#Basic-Statistics-for-Nodes,-Ways-and-Users">&#182;</a></h3><p><li>Node to Tag Ratio: 32930 / 281408 = 0.12 appr.</p>
-<p><li>Way to Tag Ratio: 167239 / 38252 =  4.37 appr.</p>
-<p><li>Top User maxolasersquad Usage: 198661 / 319660 = 0.62 or appr. 62%</p>
-<p><li>Top three users(maxo, woodpeck, and kirbert) Usage: 273447 / 319660 = 0.86 or appr. 86%</p>
-<p><li>Number of users in bottom one percent: 263 users/ 330 = 0.80 or appr. 80%</p>
+<h3 id="Basic-Statistics-for-Nodes,-Ways-and-Users">Basic Statistics for Nodes, Ways and Users<a class="anchor-link" href="#Basic-Statistics-for-Nodes,-Ways-and-Users">&#182;</a></h3><p><li>Node to Tag Ratio&colon; 32930 &sol; 281408 &equals; 0.12 appr.</p>
+<p><li>Way to Tag Ratio&colon; 167239 &sol; 38252 &equals;  4.37 appr.</p>
+<p><li>Top User maxolasersquad Usage&colon; 198661 &sol; 319660 &equals; 0.62 or appr. 62&percnt;</p>
+<p><li>Top three users&lpar;maxo, woodpeck, and kirbert&rpar; Usage&colon; 273447 &sol; 319660 &equals; 0.86 or appr. 86&percnt;</p>
+<p><li>Number of users in bottom one percent&colon; 263 &sol; 330 &equals; 0.80 or appr. 80&percnt;</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12391,8 +12416,7 @@ srividya_c       2115749          756</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12502,7 +12526,7 @@ grave yard       7
 oil change       6              
 bar              5              
 courthouse       5</code></pre>
-<p>The last category was Tallahassee's top shop types.</p>
+<p>The last category was Tallahassees top shop types.</p>
 
 <pre><code>sqlite&gt; select value, count(value) as count from (select * from nodetags union select * from waytags) where key = "shop" group by value order by count desc limit 30;
 value            count          
@@ -12541,12 +12565,11 @@ tyres            4</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>It was very interesting and informative to look through Tallahassee's OpenStreetMaps data. A large part of the Tallahassee data was clean and needed very few corrections. With a little more time and patience someone could easily fix all the errors. More detail from someone with the time to geo check the data and Tallahassee on OpenStreetMaps should provide the best results. In my opinion, at some point the effort involved to thoroughly clean and catalog all the data would outweigh the benefit of doing so. Sites like OpenStreetMaps that have less resources, I assume, or are open source, rely heavily on community driven solutions. This can cut spending considerably, but creates data that is less ordered and less reliable. Sites like Google Maps that are profit driven rely on skilled employees, tech and logistics to provide a much more complete and reliable map set. They do this by using vast resources and limiting direct community involvement. Both solutions have their benefits and limitations, but they’re just two of the many possible ways to handle map data.</p>
+<h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>It was very interesting and informative to look through Tallahassees OpenStreetMaps data. A large part of the Tallahassee data was clean and needed very few corrections. With a little more time and patience someone could easily fix all the errors. More detail from someone with the time to geo check the data and Tallahassee on OpenStreetMaps should provide the best results. In my opinion, at some point the effort involved to thoroughly clean and catalog all the data would outweigh the benefit of doing so. Sites like OpenStreetMaps that have less resources, I assume, or are open source, rely heavily on community driven solutions. This can cut spending considerably, but creates data that is less ordered and less reliable. Sites like Google Maps that are profit driven rely on skilled employees, tech and logistics to provide a much more complete and reliable map set. They do this by using vast resources and limiting direct community involvement. Both solutions have their benefits and limitations, but they’re just two of the many possible ways to handle map data.</p>
 
 </div>
 </div>
